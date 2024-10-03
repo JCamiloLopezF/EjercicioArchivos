@@ -100,7 +100,6 @@ public class PrincipalController {
             e.printStackTrace();
         }
 
-        // Limpiar campos de entrada
         limpiarCamposProducto();
     }
 

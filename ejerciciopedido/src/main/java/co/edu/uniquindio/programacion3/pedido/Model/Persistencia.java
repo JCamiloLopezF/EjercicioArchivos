@@ -46,16 +46,14 @@ public class Persistencia {
         ArrayList<String> contenido = ArchivoUtil.leerArchivo(rutaArchivoPedidos);
     
         for (String linea : contenido) {
-            // Ignorar líneas vacías
             if (linea.isEmpty()) {
                 continue;
             }
     
             String[] datos = linea.split(",");
     
-            // Verifica que haya suficientes datos
             if (datos.length < 3) {
-                continue; // Ignora esta línea si no tiene suficiente información
+                continue;
             }
     
             String codigoProducto = datos[0];
